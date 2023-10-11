@@ -15,7 +15,7 @@ const Item = ({item, index}) => {
     <div className='item-item' onClick={()=>{
 
         console.log("Detail 요청");
-        let url = "http://localhost:8089/SpringBoot2/PlayerDetail.do?name="+item.name;
+        let url = "http://13.209.74.177:8089/SpringBoot2/PlayerDetail.do?name="+item.name;
 
         axios.post(url)
         .then((res)=>{
